@@ -1,8 +1,8 @@
 import SwiftUI
 
 class KeyboardAvoidingHostingController<Content>: UIHostingController<Content> where Content: View {
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         view.backgroundColor = .clear
     }
 
